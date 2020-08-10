@@ -8,7 +8,13 @@ Boto3 is the Amazon Web Services (AWS) SDK for Python. It enables Python develop
 Prerequisites: 
   Anaconda ( https://www.anaconda.com/products/individual ). Anaconda is a free and open-source distribution of the Python and R programming languages for scientific computing, that aims to simplify package management and deployment. It will contain all the packages required to test the automation scripts.
 
-Set AWS Access key ID & Secret access key as below.
+Boto3 looks at various configuration locations until it finds configuration values. Boto3 adheres to the following lookup order when searching through sources for configuration values:
+
+    A Config object that's created and passed as the config parameter when creating a client
+    Environment variables
+    The ~/.aws/config file
+
+We will use environment variables to set AWS Access key ID & Secret access key as below.
 
 On Windows: ( Updated below key and secret with your AWS key and secret )
 
