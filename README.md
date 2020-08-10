@@ -11,9 +11,11 @@ Prerequisites:
 Set AWS Access key ID & Secret access key as below.
 
 On Windows: ( Updated below key and secret with your AWS key and secret )
+
   set AWS_ACCESS_KEY_ID=XXXXXXXXXX
   set AWS_SECRET_ACCESS_KEY=XXXXXXXXXX
 
 On Linux:
+
   export AWS_ACCESS_KEY_ID=XXXXXXXXXX
   export AWS_SECRET_ACCESS_KEY=XXXXXXXXXX
