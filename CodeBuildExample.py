@@ -12,7 +12,7 @@ class AWSAutomation:
 		new_build = client.start_build(projectName=buildProjectName)
 		buildId = new_build['build']['id']
 
-		# there is no waiter for code build, so for now we need to have our own loop
+		# NOTE - there is no waiter for code build, so for now we need to have our own loop
 		counter = 0
 		while counter < 6:   #capped this, so it just fails if it takes too long
 			time.sleep(60)
@@ -43,7 +43,7 @@ def main():
 	start_time = start_time_()
 
 	auto = AWSAutomation()
-	# pass the build name here.
+	# NOTE - update value to pass the existing build name here.
 	response = auto.invoke_build("BuildName")
 	
 	end_time = end_time_()
